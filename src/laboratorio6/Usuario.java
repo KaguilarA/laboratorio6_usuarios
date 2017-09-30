@@ -9,6 +9,34 @@ package laboratorio6;
  *
  * @author kevin
  */
-public class Usuario {
+class Usuario extends Person{
     
+    protected String profile;
+
+    public Usuario() {
+        super ();
+    }
+
+    public Usuario(String profile, String pidentification, String pname, String psurname, String psecondsurname, String ppassword) {
+        super(pidentification, pname, psurname, psecondsurname, ppassword);
+        this.profile = profile;
+    }
+    
+    
+    
+    // Gets
+    public String getProfile() {
+        return profile;
+    }
+    
+    // Sets
+    public void setProfile(String profile) {
+        this.profile = profile;
+    }
+    
+    // To String
+    @Override
+    public String toString() {
+        return "Usuario{" + "profile=" + profile + '}';
+    }
 }
