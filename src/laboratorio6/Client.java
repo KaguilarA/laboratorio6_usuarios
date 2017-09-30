@@ -9,16 +9,16 @@ package laboratorio6;
  *
  * @author kevin
  */
-class Cliente extends Person {
+class Client extends Person {
     
     protected String address, email;
     protected int phone1, phone2;
 
-    public Cliente() {
+    public Client() {
         super ();
     }
 
-    public Cliente(String address, String email, int phone1, int phone2, String pidentification, String pname, String psurname, String psecondsurname, String ppassword) {
+    public Client(String address, String email, int phone1, int phone2, String pidentification, String pname, String psurname, String psecondsurname, String ppassword) {
         super(pidentification, pname, psurname, psecondsurname, ppassword);
         this.address = address;
         this.email = email;

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package laboratorio6;
 
 /**
@@ -13,5 +8,19 @@ package laboratorio6;
 import java.util.ArrayList;
 
 public class Manager {
-    private static ArrayList <Category> allCategories = new ArrayList<>();
+    private static ArrayList <Person> Users = new ArrayList<>();
+    
+    /*public static boolean addClient() 
+    {
+        boolean validation;
+        Person newCategory = new Category(pidentification, pname, pdescription);
+        
+        if(newCategory != null){
+            allCategories.add(newCategory);
+            validation = true;
+        }else{
+             validation = false;
+        }
+        return validation;
+    }*/
 }

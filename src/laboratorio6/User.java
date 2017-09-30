@@ -9,15 +9,15 @@ package laboratorio6;
  *
  * @author kevin
  */
-class Usuario extends Person{
+class User extends Person{
     
     protected String profile;
 
-    public Usuario() {
+    public User() {
         super ();
     }
 
-    public Usuario(String profile, String pidentification, String pname, String psurname, String psecondsurname, String ppassword) {
+    public User(String profile, String pidentification, String pname, String psurname, String psecondsurname, String ppassword) {
         super(pidentification, pname, psurname, psecondsurname, ppassword);
         this.profile = profile;
     }
