@@ -18,12 +18,12 @@ class Client extends Person {
         super ();
     }
 
-    public Client(String address, String email, int phone1, int phone2, String pidentification, String pname, String psurname, String psecondsurname, String ppassword) {
+    public Client(String paddress, String pemail, int pphone1, int pphone2, String pidentification, String pname, String psurname, String psecondsurname, String ppassword) {
         super(pidentification, pname, psurname, psecondsurname, ppassword);
-        this.address = address;
-        this.email = email;
-        this.phone1 = phone1;
-        this.phone2 = phone2;
+        this.address = paddress;
+        this.email = pemail;
+        this.phone1 = pphone1;
+        this.phone2 = pphone2;
     }
 
     // Gets
@@ -57,7 +57,8 @@ class Client extends Person {
     // To String
     @Override
     public String toString() {
-        return "Cliente{" + "address=" + address + ", email=" + email + ", phone1=" + phone1 + ", phone2=" + phone2 + '}';
+        return super.toString() + ", Dirreccion= " + address + ", Correo electronico= " + email + ", Telefono 1= " + phone1 + ", Telefono 2= " + phone2;
     }
+
     
 }

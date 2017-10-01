@@ -58,6 +58,6 @@ public class Person {
     // To String
     @Override
     public String toString() {
-        return "Person{" + "identification=" + identification + ", name=" + name + ", surname=" + surname + ", secondSurname=" + secondSurname + ", password=" + password + '}';
+        return  "Identificacion= " + identification + ", nombre= " + name + ", Primer apellido= " + surname + ", Segundo apellido= " + secondSurname + ", contraseña= " + password;
     }
 }

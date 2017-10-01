@@ -37,6 +37,6 @@ class User extends Person{
     // To String
     @Override
     public String toString() {
-        return "Usuario{" + "profile=" + profile + '}';
+        return super.toString() + ", Informacion de usuario= " + profile;
     }
 }
