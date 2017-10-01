@@ -84,7 +84,7 @@ public class UI {
                     out.println("Opción Inválida");
                 break;           
             }
-        } while (option !=4);
+        } while (option !=3);
     }
     
     public static void registerClient() throws IOException
@@ -171,7 +171,7 @@ public class UI {
                 out.println(allUsers[i] + "\n");
             }
         }else{
-            out.println("Aún no hay tiendas registradas.");
+            out.println("No existen usuarios registrados");
             
         }
     }
