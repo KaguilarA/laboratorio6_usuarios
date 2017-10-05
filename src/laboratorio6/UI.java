@@ -6,8 +6,10 @@ package laboratorio6;
  */
 
 import java.io.*;
+import LS.Manager;
 
 public class UI {
+    
     static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
     static PrintStream out = System.out;
     static Manager manager = new Manager();
@@ -165,10 +167,11 @@ public class UI {
         String [] allUsers;
         allUsers = Manager.getListPerson();
         int catSize = allUsers.length;
+        int index = 0;
         
-        if(catSize != 0){
+        if(catSize != index){
             for(int i=0; i < catSize; i++){
-                out.println(allUsers[i] + "\n");
+                out.println(allUsers[index] + "\n");
             }
         }else{
             out.println("No existen usuarios registrados");
